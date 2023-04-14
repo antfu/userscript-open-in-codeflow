@@ -8,7 +8,6 @@
 // @author       Anthony Fu
 // @license      MIT
 // @match        https://github.com/**
-// @match        https://github.com/**#**
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=pr.new
 // @grant        none
 // ==/UserScript==
@@ -67,6 +66,7 @@
   }
 
   run()
+  setTimeout(run, 500) // deduped, no harm in making sure the dom is ready
 
   // listen to github page loaded event
   document.addEventListener('pjax:end', () => run())
