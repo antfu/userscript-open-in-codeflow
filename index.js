@@ -66,6 +66,7 @@
   }
 
   run()
+  setTimeout(run, 500) // deduped, no harm in making sure the dom is ready
 
   // listen to github page loaded event
   document.addEventListener('pjax:end', () => run())
