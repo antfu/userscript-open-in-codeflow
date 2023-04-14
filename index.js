@@ -27,9 +27,13 @@
   style.innerHTML = css
   document.head.appendChild(style)
 
+  function updateButtonHref(button) {
+    button.href = location.href.replace('https://github.com/', 'https://pr.new/')
+  }
+
   function createButton() {
     const a = document.createElement('a')
-    a.href = location.href.replace('https://github.com/', 'https://pr.new/')
+    updateButtonHref(a)
     a.target = '_blank'
     a.classList.add('btn')
     a.classList.add('btn-sm')
@@ -49,8 +53,12 @@
   }
 
   function run() {
-    if (document.querySelector(`#${id}`))
+    const button = document.querySelector(`#${id}`)
+    if (button) {
+      // Always update the link to support GitHub SPA navigations
+      updateButtonHref(button)
       return
+    }
 
     const repoActions = document.querySelector('#repository-details-container ul')
     if (repoActions) {
