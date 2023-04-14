@@ -3,7 +3,7 @@
 // @homepageURL  https://github.com/antfu/open-in-codeflow
 // @supportURL   https://github.com/antfu/open-in-codeflow
 // @namespace    https://greasyfork.org/en/scripts/464002-open-in-codeflow
-// @version      0.1.1
+// @version      0.1.2
 // @description  Enhances GitHub to add a button to open the repo/issue/PR in Codeflow.
 // @author       Anthony Fu
 // @license      MIT
