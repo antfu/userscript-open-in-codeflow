@@ -18,6 +18,15 @@
 
   const id = 'open-in-codeflow'
 
+  const css = [
+    // Hide comments from codeflow bot
+    '.js-timeline-item:has(* > .author[href="/apps/codeflowapp"]) { display: none; }',
+  ].join('')
+
+  const style = document.createElement('style')
+  style.innerHTML = css
+  document.head.appendChild(style)
+
   function createButton() {
     const a = document.createElement('a')
     a.href = location.href.replace('https://github.com/', 'https://pr.new/')
