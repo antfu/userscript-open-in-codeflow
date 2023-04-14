@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Open in Codeflow
-// @namespace    http://tampermonkey.net/
 // @homepageURL  https://github.com/antfu/open-in-codeflow
 // @supportURL   https://github.com/antfu/open-in-codeflow
-// @namespace    https://greasyfork.org/en/scripts/
+// @namespace    https://greasyfork.org/en/scripts/12345-open-in-codeflow
 // @version      0.1
-// @description  Enhances the GitHub to add a button to open the repo/issue/PR in Codeflow.
+// @description  Enhances the GitHub to add a button to open the repo issue PR in Codeflow
 // @author       Anthony Fu
 // @license      MIT
 // @match        https://github.com/**
