@@ -1,4 +1,4 @@
-# Open in Codeflow
+# Userscript: Open in Codeflow
 
 Enhances GitHub to add a button to open the repo/issue/PR in Codeflow.
 
