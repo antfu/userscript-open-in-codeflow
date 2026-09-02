@@ -4,7 +4,7 @@ Enhances GitHub to add a button to open the repo/issue/PR in Codeflow.
 
 [Install on Greasyfork](https://greasyfork.org/en/scripts/464002-open-in-codeflow)
 
-![](https://user-images.githubusercontent.com/11247099/232064581-5fb9c374-ba3e-4ccf-baf5-d7c292bdab82.png)
+![Preview](https://user-images.githubusercontent.com/11247099/232064581-5fb9c374-ba3e-4ccf-baf5-d7c292bdab82.png)
 
 ## Features
 
@@ -15,7 +15,7 @@ Enhances GitHub to add a button to open the repo/issue/PR in Codeflow.
 
 <p align="center">
   <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
+    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg' alt="Sponsor Anthony Fu" />
   </a>
 </p>
 

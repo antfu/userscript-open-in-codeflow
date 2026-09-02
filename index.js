@@ -37,7 +37,7 @@
     a.target = '_blank'
     a.classList.add('btn')
     a.classList.add('btn-sm')
-    a.innerText = ' Codeflow '
+    a.textContent = ' Codeflow '
     a.id = id
     Object.assign(a.style, {
       display: 'inline-flex',
@@ -53,24 +53,19 @@
   }
 
   function run() {
-    const button = document.querySelector(`#${id}`)
+    const repoActions = document.querySelector('ul[data-testid="repo-header-actions"]')
+    if (!repoActions)
+      return
+
+    const button = repoActions.querySelector(`#${id}`)
     if (button) {
-      // Always update the link to support GitHub SPA navigations
       updateButtonHref(button)
       return
     }
 
-    const repoActions = document.querySelector('#repository-details-container ul')
-    if (repoActions) {
-      const li = document.createElement('li')
-      li.appendChild(createButton())
-      repoActions.prepend(li)
-      return
-    }
-
-    const prActions = document.querySelector('.gh-header-actions')
-    if (prActions)
-      prActions.prepend(createButton())
+    const li = document.createElement('li')
+    li.appendChild(createButton())
+    repoActions.prepend(li)
   }
 
   run()
